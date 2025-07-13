@@ -1,0 +1,115 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body{
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(45deg ,#d2001a, #7462ff , #f48e21, #23d5ab);
+  background-size: 300% 300%;
+  animation: color 10s ease-in infinite;
+  
+}
+@keyframes color {
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
+  
+}
+
+
+ 
+.container{
+        padding: 50px 8%;
+        display: block;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery-image{
+  width: 172px;
+  height: 162px;
+  margin: 76px 16px 30px 20px;
+  transform: rotate(30deg);
+  overflow: hidden;
+  transition: transform 0.4s;
+  cursor: pointer;
+}
+
+
+.gallery-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;                
+    transform: rotate(-49deg);
+    transition: transform 0.3s;
+}
+.gallery-image:hover {
+    transform: scale(1.1);
+    box-shadow: -9px -6px 30px lawngreen, 11px 11px 20px rgb(0, 17, 255);
+  }
+  
+  .gallery-image:hover img {
+    transform: scale(1.1);
+  }
+
+  .img-style {
+    display: none;
+    position: fixed;
+    padding-top: 70px; 
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+  }
+
+  
+  /* image content styling for full-screen image display */
+  .img-content {
+    display: block;
+    margin: auto;
+    max-width: 70%;
+    max-height: 70%;
+  }
+
+
+
+
+  .close{
+    position: absolute;
+    top: 30px;
+    right: 35px;
+    cursor: pointer;
+  }
+
+
+
+  /* <uniquifier>: Use a unique and descriptive class name
+  // <weight>: Use a value from 100 to 400*/
+  
+h1 {
+    /*text-align: center;*/
+    font-family: "Playwrite HR Lijeva", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+  }
+
+

@@ -1,0 +1,12 @@
+.canteen{
+    font-weight:bold;
+    color:#525fff;
+}
+.img-canteen{
+    display: block;
+    margin: auto;
+    width: 60%;
+}
+.canteen-para{
+    font-size:1rem;
+}
